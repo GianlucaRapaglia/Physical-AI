@@ -303,8 +303,8 @@ model.eval()
 n_circuits = 200
 
 grid_size = 64
-grid_range = 0.3
-circuit_idx = 0
+grid_range = 0.6
+circuit_idx = 120
 
 inputs, targets = generate_dipole_dataset(
     n_circuits=n_circuits,
@@ -312,9 +312,6 @@ inputs, targets = generate_dipole_dataset(
     grid_range=grid_range,
     field_clip=3e4
 )
-
-print(inputs.shape)
-print(targets.shape)
 
 n_points = grid_size * grid_size
 

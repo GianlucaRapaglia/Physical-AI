@@ -34,11 +34,28 @@ Output:
 Model:
 Fully connected neural network (MLP)
 
-## Results
+## In-Distribution Predictions
+
+The model performs very well on data within the training distribution. Below is an example of the predicted field compared to the ground truth:
 
 <p align="center">
   <img src="images/target_electric_field.png" width="45%" />
   <img src="images/predicted_electric_field.png" width="45%" />
 </p>
 
+The model accurately captures both the magnitude and direction of the electric field vectors.
 
+## Out-of-Distribution Predictions
+
+To test generalization, we evaluated the model on a grid outside the training range ([-0.6, 0.6] m instead of [-0.3, 0.3] m). As expected, the predictions degrade when extrapolating beyond the training distribution:
+
+<p align="center">
+  <img src="images/target_electric_field_ood.png" width="45%" />
+  <img src="images/predicted_electric_field_ood.png" width="45%" />
+</p>
+
+This demonstrates that while the surrogate model captures the general field pattern, **extrapolation is challenging**.  
+
+## Physics-Informed Extension
+
+Incorporating physics constraints, such as enforcing \(\nabla \cdot \mathbf{E} = 0\), could improve generalization and reduce errors in out-of-distribution scenarios. Physics-informed losses guide the model to respect fundamental laws even when input conditions are unseen during training.
