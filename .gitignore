@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environments
+.venv/
+venv/
+
+# ML artifacts
+mlruns/
+*.pth
+*.pt
+*.onnx
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Artifacts
+*.save
+*.npz
