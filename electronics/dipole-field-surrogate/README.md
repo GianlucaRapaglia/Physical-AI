@@ -36,12 +36,6 @@ Fully connected neural network (MLP)
 
 ## Results
 
-### Target Field
-![Target Field](images/target_electric_field.png)
-
-### Predicted Field
-![Predicted Field](images/predicted_electric_field.png)
-
 <p align="center">
   <img src="images/target_electric_field.png" width="45%" />
   <img src="images/predicted_electric_field.png" width="45%" />
