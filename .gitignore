@@ -20,3 +20,8 @@ Thumbs.db
 # Artifacts
 *.save
 *.npz
+
+# Specific files
+/electronics/dipole-field-surrogate/notebooks/00 - RLC circuit surrogate.ipynb
+/electronics\dipole-field-surrogate\notebooks\01 - Electric Field Surrogate Model.ipynb
+/electronics\dipole-field-surrogate\notebooks\02.0 - Inference.ipynb
