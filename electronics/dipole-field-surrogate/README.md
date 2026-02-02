@@ -58,4 +58,4 @@ This demonstrates that while the surrogate model captures the general field patt
 
 ## Physics-Informed Extension
 
-Incorporating physics constraints, such as enforcing \(\nabla \cdot \mathbf{E} = 0\), could improve generalization and reduce errors in out-of-distribution scenarios. Physics-informed losses guide the model to respect fundamental laws even when input conditions are unseen during training.
+Incorporating physics constraints, such as enforcing $\nabla \cdot \mathbf{E} = 0$, could improve generalization and reduce errors in out-of-distribution scenarios. Physics-informed losses guide the model to respect fundamental laws even when input conditions are unseen during training.
